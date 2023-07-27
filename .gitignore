@@ -1,0 +1,6 @@
+# ignore vim and emacs autosave files ~
+*~
+# ignore compiled files
+*.[oa]
+# ignore executables
+[abcdefghijk]
