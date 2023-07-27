@@ -1,5 +1,4 @@
 # alx-headphones
-Implement a design from scratch, without any library, a web page using all HTML, CSS, Accessibility, and Responsive design knowledge.
 ![alx logo](https://www.alxafrica.com/wp-content/uploads/2022/12/logo-white.svg)
 > Implement a design from scratch
 
@@ -12,7 +11,11 @@ You won't have a lot of instructions, you are free to implement it the way that 
 > This webpage has been designed by Nicholas Philippot, UI/UX designer.
 
 ## Project Notes
-* We are using a UI pack called Sharps for the layout of the web app.
+* Be familiar with Figma.
+* Reset CSS styling.
+* Use variables.
+* Simple CSS selectors.
+* Simple HTML structure.
 
 ## Author
 * **Joseph Mahiuha** - [Mahiuha](https://github.com/Mahiuha) 
