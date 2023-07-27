@@ -1,6 +1,4 @@
 # alx-headphones
-Implement a design from scratch, without any library, a web page using all HTML, CSS, Accessibility, and Responsive design knowledge.
-
 ![alx logo](https://www.alxafrica.com/wp-content/uploads/2022/12/logo-white.svg)
 > Implement a design from scratch
 
