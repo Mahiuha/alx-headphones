@@ -6,7 +6,7 @@
 
 :root {
     --color-primary: #FF6565;
-    --color-black: #090909;
+    --color-black:  #090909;
     --color-white: #FFFFFF;
     --color-grey: #a0a0a0;
     --color-light-grey: #f3f3f3;
@@ -31,265 +31,268 @@
 }
 
 /* Base */
-*, 
-*::before, 
-*::after {
-    box-sizing: border-box;
+
+*, *:before, *:after {
+   box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
+   scroll-behavior: smooth;
+   font-size: 62.5%;
 }
 
 body {
-    margin: 0;
-    border: 1px solid var(--color-black);
-    columns: var(--color-white);
-    background-color: var(--color-black);
-    font-family: var(--font-family);
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-regular);
-    text-align: center;
+   margin: 0;
+   border: 1px solid var(--color-black);
+   color: var(--color-white);
+   background-color: var(--color-black);
+   font-family: var(--font-family);
+   font-size: var(--font-size-medium);
+   font-weight: var(--font-weight-regular);
+   text-align: center;
 }
 
-h1, h2,h3, h4, h5, h6 {
-    font-weight: var(--font-weight-bold);
+h1, h2, h3, h4, h5, h6 {
+   font-weight: var(--font-weight-bold);
+}
+
+a {
+   text-decoration: none;
 }
 
 .button {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    border-radius: 40px;
-    font-weight: var(--font-weight-bold);
-    text-transform: uppercase;
-    padding: 15px 30px;
-    font-size: var(--font-size-small);
+   color: var(--color-white);
+   background-color: var(--color-primary);
+   border-radius: 40px;
+   font-weight: var(--font-weight-bold);
+   text-transform: uppercase;
+   padding: 15px 30px;
+   font-size: var(--font-size-small);
 }
 
 .button:hover {
-    opacity: 0.9;
+   opacity: 0.9;
 }
 
 ul, nav {
-    list-style: none;
+   list-style: none;
 }
 
 hr {
-    width: 150px;
-    height: 2px;
-    background-color: var(--color-primary);
-    border: 0;
-    margin-bottom: 80px;
+   width: 150px;
+   height: 2px;
+   background-color: var(--color-primary);
+   border: 0;
+   margin-bottom: 80px;
 }
 
-/* Sections */
+/* Sections  */
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 125px 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 125px 100px;
 }
 
-@media screen and (max-width: 1000px){
-    section {
-        padding: 100px 50px;
-    }   
+@media screen and (max-width: 1000px) {
+   section {
+     padding: 100px 50px;
+   }
 }
 
 @media screen and (max-width: 600px) {
-    section {
-        padding: 80px 30px;
-    }
+   section {
+      padding: 80px 30px;
+   }
 }
 
 .hero-title {
-    margin-bottom: 0;
+   margin-bottom: 0;
 }
 
 .hero-subtitle {
-    font-size: var(--font-size-medium);
-    margin-bottom: 5rem;
+   font-size: var(--font-size-medium);
+   margin-bottom: 5rem;
 }
 
 section p {
-    max-width: 637px;
-    margin-bottom: 35px;
-    line-height: var(--line-height-big);
+   max-width: 637px;
+   margin-bottom: 35px;
+   line-height: var(--line-height-big);
 }
 
 .columns {
-    width: 100%;
-    display: flex;
-    flex-wrap: row wrap;
-    justify-content: center;
+   width: 100%;
+   display: flex;
+   flex-wrap: row wrap;
+   justify-content: center;
 }
 
 #pentagon li {
-    background-image: url(./images/pentagone.png);
+   background-image: url(./images/pentagone.png);
 }
 
 /* Header */
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 100px 0;
-    background: transparent;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 100px 0;
+   background: transparent;
 }
 
 .hero .hero-title {
-    margin-top: 300px;
+   margin-top: 300px;
 }
 
 header .menu-icon {
-    cursor: pointer;
-    padding: 2.5rem;
-    position: relative;
-    user-select: none;
+   cursor: pointer;
+   padding: 2.5rem;
+   position: relative;
+   user-select: none;
 }
 
 header .menu-icon .navicon {
-    background: var(--color-white);
-    display: block;
-    width: 1.2rem;
-    height: .2rem;
-    position: relative;
-    transition: background .2s ease-out;
+   background: var(--color-white);
+   display: block;
+   width: 1.2rem;
+   height: .2rem;
+   position: relative;
+   transition: background .2s ease-out;
 }
 
-header .menu-icon .navicon::before, header .menu-icon .navicon::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: var(--color-white);
-    transition: all .2s ease-out;
+header .menu-icon .navicon:before, header .menu-icon .navicon:after {
+   content: '';
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: var(--color-white);
+   transition: all .2s ease-out;
 }
 
-header .menu-icon .navicon::before {
-    top: .7rem;
-    width: 2rem;
+header .menu-icon .navicon:before {
+   top: .7rem;
+   width: 2rem;
 }
 
-header .menu-icon .navicon::after {
-    top: -.7rem;
-    width: 2rem;
+header .menu-icon .navicon:after {
+   top: -.7rem;
+   width: 2rem;
 }
 
 header .menu-btn {
-    display: none;
+   display: none;
 }
 
 header .menu-icon {
-    display: none;
+   display: none;
 }
 
 .menu-btn:checked ~ nav {
-    display: block;
-    max-height: 100%;
-    overflow: inherit;
+   display: block;
+   max-height: 100%;
+   overflow: inherit;
 }
 
 header .menu-btn:checked + .menu-icon .navicon {
-    background: transparent;
+   background: transparent;
 }
 
 header .menu-btn:checked + .menu-icon .navicon::before {
-    transform: rotate(-45deg);
+   transform: rotate(-45deg);
 }
 
 header .menu-btn:checked + .menu-icon .navicon::after {
-    transform: rotate(45deg);
+   transform: rotate(45deg);
 }
 
 header .menu-btn:checked + .menu-icon .navicon::before, header .menu-btn:checked + .menu-icon .navicon::after {
-    top: 0;
+   top: 0;
 }
 
 header nav {
-    display: flex;
+   display: flex;
 }
 
 header nav li {
-    margin: 0 30px;
-    text-transform: lowercase;
-    font-weight: var(--font-weight-bold);
+   margin: 0 30px;
+   text-transform: lowercase;
+   font-weight: var(--font-weight-bold);
 }
 
 header nav li:first-child {
-    margin-left: 0;
+   margin-left: 0;
 }
 
 header nav li:last-child {
-    margin-right: 0;
+   margin-right: 0;
 }
 
 header nav li a {
-    color: var(--color-white);
+   color: var(--color-white);
 }
 
 header nav li a:hover {
-    color: var(--color-primary);
+   color: var(--color-primary);
 }
 
 @media screen and (max-width: 480px) {
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+   header {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   
+   header nav {
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+      justify-content: center;
+   }
 
-    header nav {
-        display: none;
-        flex-direction: column;
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height .2s ease-out;
-        justify-content: center;
-    }
+   header nav li {
+      margin: 0 0;
+      padding-bottom: 3rem;
+   }
 
-    header nav li {
-        margin: 0 0;
-        padding-bottom: 3rem;
-    }
-
-    header .menu-icon {
-        display: initial;
-        order: -1;
-    }
+   header .menu-icon {
+      display: initial;
+      order: -1;
+   }
 }
 
-/* Hero */
+/*  Hero */
 
 .hero {
-    position: relative;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
+   position: relative;
+   justify-content: center;
+   min-height: 100vh;
+   text-align: center;
 }
 
 .hero .background-image {
-    position: absolute;
-    background-image: url(./images/headphones_hero_1.jpg);
-    background-position: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-color: var(--color-black);
-    z-index: -1;
+   position: absolute;
+   background-image: url(./images/headphones_hero_1.jpg);
+   background-position: center;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-color: var(--color-black);
+   z-index: -1;
 }
 
 .hero .button {
-    box-shadow: 5px 1px 15px 2px rgba(0, 0, 0, 0.57);
-    margin-bottom: 5rem;
+   box-shadow: 5px 1px 15px 2px rgba(0, 0, 0, 0.57);
+   margin-bottom: 5rem;
 }
